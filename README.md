@@ -18,13 +18,24 @@ Este documento descreve o fluxo de trabalho "Padrão Ouro" para colaboração em
     git config --global user.name "Seu Nome"
     git config --global user.email "seu-email@exemplo.com"
     ```
+### 1.3 Criar ou fazer fork
+* No site do github você pode ir em repositórios e criar um novo; ou
+* Você pode acessar o link de um repositório que já existe e fazer o fork para sua própria conta, vamos usar essa abordagem:
+- Acessem https://github.com/dieison-depra-fiap/2026-engsoft-webdev
+- Garantam que estejam logados na sua conta do github
+- Cliquem no botão fork
+- Escolham seu próprio nome para o repositório
+- Pegue a URL do REPO (vou chamar de URL_REPO_ORIGINAL)
 
 ## 📂 2. Configuração Inicial (Definindo o Upstream)
 
 ### 2.1 Criar uma pasta de trabalho na máquina local:
 ```bash
 mkdir -p workspaces/fiap/
-git clone https://github.com/dieison-depra-fiap/2026-engsoft-webdev.git
+git clone URL_REPO_ORIGINAL
+ (ex: https://github.com/dieison-depra/2026-engsoft-webdev.git)
+
+cd 2026-engsoft-webdev
 ```
 
 ### 2.2 Vincular ao repositório original (Upstream)
@@ -34,10 +45,31 @@ Abra o terminal no VS Code e execute:
 
 ```bash
 # Adiciona o repositório original como "upstream"
-git remote add upstream https://github.com/dieison-depra-fiap/2026-engsoft-webdev
+git remote add upstream https://github.com/dieison-depra-fiap/2026-engsoft-webdev.git
 
 # Verifica se os remotes foram configurados corretamente (deve listar origin e upstream)
 git remote -v
+```
+
+# 2. Criando uma Branch e Desenvolvendo
+Nunca trabalhe diretamente na branch main. Crie um ambiente isolado para a sua nova feature.
+
+```bash
+# Cria uma nova branch e muda para ela imediatamente
+git checkout -b minha-nova-feature
+```
+
+Faça suas alterações no código pelo VS Code. Quando terminar, salve o trabalho no seu repositório remoto (origin):
+
+```bash
+# Adiciona os arquivos modificados ao stage
+git add .
+
+# Cria o commit com uma mensagem descritiva do que foi feito
+git commit -m "feat: adiciona nova funcionalidade X"
+
+# Envia a branch para o seu GitHub (origin)
+git push origin minha-nova-feature
 ```
 
 ## 🔄 3. Fluxo de Alterações e Sincronização
