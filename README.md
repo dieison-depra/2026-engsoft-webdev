@@ -123,3 +123,23 @@ git push origin minha-nova-feature
 ```
 
 Próximo e último passo: Acesse o seu repositório no GitHub pelo navegador. Você verá um aviso e um botão verde sugerindo a criação de um Pull Request. Clique nele, descreva suas alterações e envie sua contribuição para o repositório original!
+
+# Passo 7: Da branch para a main e Publicando
+Agora que sua branch está testada e atualizada, é hora de levar as suas alterações para a oficial!
+
+```bash
+# Primeiro, mude para a branch que vai RECEBER as alterações (a main)
+git checkout main
+
+# Puxe o código da sua branch para dentro da main
+git merge minha-nova-feature
+```
+
+Sua main local agora tem tudo! O último passo é mandar essa versão atualizada para a nuvem.
+
+```bash
+# Envia a main atualizada para o GitHub
+git push origin main
+```
+
+Dica de Limpeza: Como a sua feature já está na main, você pode deletar a branch antiga para manter a casa limpa: git branch -d minha-nova-feature.
