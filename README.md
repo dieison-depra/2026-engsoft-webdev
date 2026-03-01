@@ -1,4 +1,5 @@
-# Guia de Workflow Colaborativo: Fork & Pull Request  
+# Guia de Workflow Colaborativo: Fork & Pull Request
+
 **(Padrão Ouro para Contribuição em Projetos FIAP)**
 
 Este fluxo segue o **Forking Workflow** — o padrão mais seguro e profissional para contribuir em repositórios que você não tem permissão de push direto (ex: repositório da disciplina).  
@@ -9,6 +10,8 @@ Ele mantém seu fork sempre sincronizado, evita conflitos desnecessários e faci
 - Sincronização fácil com o repositório oficial (upstream)  
 - Code review via Pull Request  
 - Histórico limpo e rastreável
+
+---
 
 ## 🛠️ 1. Preparação do Ambiente
 
@@ -122,10 +125,10 @@ git push origin feat/adiciona-filtro-preco-cardapio
 - Base repository: dieison-depra-fiap/2026-engsoft-webdev
 - Compare: sua branch (feat/...)
 - Escreva um bom título e descrição:
--- O que mudou?
--- Por quê?
--- Prints / gifs se ajudar
--- Referencie issues se existir (#numero)
+   - O que mudou?
+   - Por quê?
+   - Prints / gifs se ajudar
+   - Referencie issues se existir (#numero)
 - Clique Create pull request
 Dica: Mantenha o PR pequeno e focado (1 feature por PR).
 
