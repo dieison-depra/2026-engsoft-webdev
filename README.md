@@ -77,7 +77,7 @@ git commit -m "feat: adiciona filtro por preço no cardápio"
 # ou "docs: melhora explicação do README"
 
 #Envie para o seu fork:
-Bashgit push origin feat/adiciona-filtro-preco-cardapio
+git push origin feat/adiciona-filtro-preco-cardapio
 ```
 
 ## 🔄 4. Sincronizando com o Upstream (antes de qualquer PR)
