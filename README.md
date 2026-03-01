@@ -50,7 +50,7 @@ git remote add upstream https://github.com/dieison-depra-fiap/2026-engsoft-webde
 git remote -v
 ```
 
-# 🔄 3. Criando uma Branch e Desenvolvendo
+## 🔄 3. Criando uma Branch e Desenvolvendo
 Nunca trabalhe diretamente na branch main. Crie um ambiente isolado para a sua nova feature.
 
 ```bash
@@ -71,7 +71,7 @@ git commit -m "feat: adiciona nova funcionalidade X"
 git push origin minha-nova-feature
 ```
 
-# 4. Buscando Atualizações do Repositório Original
+## 4. Buscando Atualizações do Repositório Original
 Enquanto você trabalhava, o repositório original (upstream) pode ter recebido atualizações. Precisamos trazer essas novidades para a sua máquina local.
 
 ```bash
@@ -87,7 +87,7 @@ git merge upstream/main
 
 Dica: Opcionalmente, você pode atualizar a main do seu próprio GitHub rodando um git push origin main logo após esse passo.
 
-# 5. Integrando as Novidades na sua Branch (Merge)
+## 5. Integrando as Novidades na sua Branch (Merge)
 Sua main agora está atualizada, mas a sua branch minha-nova-feature ainda não possui essas novidades. Vamos integrá-las para evitar problemas futuros.
 
 ```bash
@@ -98,7 +98,7 @@ git checkout minha-nova-feature
 git merge main
 ```
 
-## 5.1 Resolução de Conflitos:
+### 5.1 Resolução de Conflitos:
 Se houver conflitos (código editado no mesmo lugar em ambas as versões), o VS Code irá destacá-los.
 
 Abra os arquivos conflitantes.
@@ -114,7 +114,7 @@ git add .
 git commit -m "chore: resolve conflitos de merge com a main atualizada"
 ```
 
-# 6. Publicação Final e Pull Request
+## 6. Publicação Final e Pull Request
 Sua branch agora contém o seu trabalho e está totalmente sincronizada com o projeto original. Chegou a hora de preparar o envio.
 
 ```bash
@@ -124,7 +124,7 @@ git push origin minha-nova-feature
 
 Próximo e último passo: Acesse o seu repositório no GitHub pelo navegador. Você verá um aviso e um botão verde sugerindo a criação de um Pull Request. Clique nele, descreva suas alterações e envie sua contribuição para o repositório original!
 
-# Passo 7: Da branch para a main e Publicando
+## Passo 7: Da branch para a main e Publicando
 Agora que sua branch está testada e atualizada, é hora de levar as suas alterações para a oficial!
 
 ```bash
