@@ -157,3 +157,14 @@ Dicas Finais e Anti-Erros Comuns (2026)
 * Se o upstream mudar muito: rebase sua branch em vez de merge (git rebase main)
 
 Boa contribuição! 🚀
+
+## Licença e Uso
+
+Este projeto está licenciado sob a [Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+**⚠️ Aviso Importante:**
+Este material foi desenvolvido estritamente para **fins didáticos e aprendizado de alunos**. 
+- **Proibido o uso comercial:** Nenhuma parte deste código ou arquitetura pode ser utilizada em projetos lucrativos ou empresas sem autorização prévia e ressarcimento ao autor.
+- **Sem Derivações:** A redistribuição de versões modificadas deste material é proibida.
+- **Atribuição:** O crédito ao autor original deve ser mantido em qualquer cópia autorizada.
+
